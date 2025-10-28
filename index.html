@@ -29,7 +29,13 @@
     }
     header h1 {
       font-size: 2.8rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3rem;
+    }
+    .location {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color: #e0f2f1;
     }
     header p {
       font-size: 1.1rem;
@@ -107,6 +113,11 @@
       transition: 0.3s;
     }
     .hero-links a:hover { background: rgba(255,255,255,0.3); }
+    #about p {
+      font-size: 1.05rem;
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
     @media (max-width: 768px) {
       header { flex-direction: column; text-align: center; }
       .profile-pic { margin-top: 1.5rem; }
@@ -119,6 +130,7 @@
   <header>
     <div class="header-text">
       <h1>Malhar Damle</h1>
+      <div class="location">📍 New York, NY</div>
       <p>Software Engineer | Machine Learning | Cloud Architecture</p>
       <div class="hero-links">
         <a href="mailto:mmdamle03@gmail.com">Email</a>
@@ -128,6 +140,11 @@
     </div>
     <img src="profile_pic.png" alt="Profile Picture" class="profile-pic">
   </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I’m a software engineer passionate about building scalable systems and intelligent automation. At Capital One, I design serverless architectures and ETL pipelines that process massive data workloads efficiently. My work spans backend engineering, cloud infrastructure, and applied machine learning — with a focus on practical, high-impact solutions. I enjoy solving complex technical problems and exploring how AI can improve real-world systems.</p>
+  </section>
 
   <nav>
     <a href="#experience">Experience</a>
@@ -155,11 +172,10 @@
         <div class="date">May 2022 – Aug 2023</div>
         <p>Automated a 100TB+ data processing pipeline for plankton classification using Bash, CNNs, and ML frameworks. Built visualization tools in HeavyAI for ocean health and climate research analytics.</p>
       </li>
-       <li>
+      <li>
         <div class="role">Full Stack Developer Intern – Oregon State University</div>
         <div class="date">Sep 2022 – Jun 2023</div>
-        <p>Created a webpage from the ground up using Ruby on Rails for a small business, transitioning them to a fully digital methodology to store work orders, improving efficiency by 10x, and eliminating ALL excel and paper
-            records. Designed the front end in Bootstrap and SCSS and stored the data via POSTGRESQL, creating a scalable product.</p>
+        <p>Created a webpage from the ground up using Ruby on Rails for a small business, transitioning them to a fully digital methodology to store work orders, improving efficiency by 10x, and eliminating all Excel and paper records. Designed the front end in Bootstrap and SCSS and stored the data via PostgreSQL, creating a scalable product.</p>
       </li>
     </ul>
   </section>
@@ -202,7 +218,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Malhar Damle.</p>
+    <p>© 2025 Malhar Damle. Built with HTML + CSS.</p>
   </footer>
 </body>
 </html>
