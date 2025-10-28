@@ -1,24 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Assignment 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malhar Damle | Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #14b8a6, #0ea5e9);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    nav {
+      background-color: #161b22;
+      text-align: center;
+      padding: 1rem;
+      border-bottom: 1px solid #21262d;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: #e6edf3;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #14b8a6; }
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    h2 {
+      color: #14b8a6;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #14b8a6;
+      display: inline-block;
+    }
+    ul { list-style-type: none; padding: 0; }
+    li { margin-bottom: 1.5rem; }
+    .role { font-weight: 600; font-size: 1.1rem; color: #fff; }
+    .date { color: #9ca3af; font-size: 0.9rem; margin-bottom: 0.3rem; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    footer {
+      background-color: #161b22;
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #9ca3af;
+      margin-top: 4rem;
+      border-top: 1px solid #21262d;
+    }
+    .contact a {
+      color: #14b8a6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero-links a {
+      color: #fff;
+      text-decoration: none;
+      background: rgba(255,255,255,0.1);
+      padding: 0.5rem 1rem;
+      margin: 0.3rem;
+      border-radius: 6px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .hero-links a:hover { background: rgba(255,255,255,0.3); }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      nav a { display: inline-block; margin: 0.5rem; }
+    }
+  </style>
 </head>
-<body style = "background-color:grey;">
-		<h1>  Hello! My name is: Malhar Damle</h1>
-        <ul style = "color: lightblue;">
-        <li><h2 >OSU Email: damlema@oregonstate.edu</h2></li>
-        <p> 
-       <li>Major: Computer Science Systems </li>
-        <li>Year: 2nd (Sophomore)</li>
-        <li>The most interesting and complex html assignment that I have worked on so far in my career, has been revamping a webpage to enable better teleoperation of autonomous robots, this project involved many style changes to the UI/UX of the page as well as working on understanding how the design of a web page can lead to unintentional biases</li>
-        <li>The main thing I hope to learn from this class is to be able to create an entire project from start to finish, meaning being able to design a front end website as well as create a functioning backend. </li>
-        <li>Yes, I have signed up for the Piazza forum!</li>
+<body>
+  <header>
+    <h1>Malhar Damle</h1>
+    <p>Software Engineer | Machine Learning | Cloud Architecture</p>
+    <div class="hero-links">
+      <a href="mailto:mmdamle03@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/malhardamle" target="_blank">LinkedIn</a>
+      <a href="malhardamle_swe_resume.pdf" target="_blank">Resume</a>
+    </div>
+  </header>
 
-    </p>
+  <nav>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <div class="role">Software Engineer – Capital One, NYC</div>
+        <div class="date">Feb 2024 – Present</div>
+        <p>Designed and implemented a monthly statement generation platform powering 80% of Capital One’s modernization efforts using AWS serverless architecture. Built ETL pipelines processing 15TB+ across 17M+ accounts with 99.9% accuracy. Developed workflow APIs reducing onboarding time from days to minutes, and created real-time dashboards improving performance by 50%.</p>
+      </li>
+      <li>
+        <div class="role">Software Engineer Intern – Capital One, McLean, VA</div>
+        <div class="date">Jun 2023 – Aug 2023</div>
+        <p>Developed a prototype scoring engine to assess AWS infrastructure maturity across thousands of teams using Python, Docker, and PostgreSQL to drive cost and performance improvements.</p>
+      </li>
+      <li>
+        <div class="role">Full Stack Developer Intern – Rugged Threads</div>
+        <div class="date">Sep 2022 – Jun 2023</div>
+        <p>Created a full Rails web app to digitize small business workflows, replacing all paper and Excel records, improving efficiency by 10×.</p>
+      </li>
     </ul>
-    <p style = "text-align: center;">
-    <img src ="IMG_0892.JPG" width="auto" height="400" class="center">
-</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects & Publications</h2>
+    <ul>
+      <li>
+        <div class="role">Behavioral Cloning for Autonomous Driving</div>
+        <p>Developed CNN models to mimic human driving behavior and autonomously respond to emergency vehicles in highway environments. Honors research at OSU.</p>
+      </li>
+      <li>
+        <div class="role">Marine AI (Plankton Classification)</div>
+        <p>Automated 100TB+ data processing and ML pipeline for image segmentation and classification. Created HeavyAI dashboards for ocean-health analytics.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Tech Stack</h2>
+    <div class="skills-grid">
+      <div><strong>Languages:</strong> Python, Go, C++, JavaScript, SQL</div>
+      <div><strong>Cloud & DevOps:</strong> AWS (Certified SA), Docker, Jenkins, Git</div>
+      <div><strong>Frameworks:</strong> Rails, YOLO, DarkNet, HeavyAI</div>
+      <div><strong>Specialties:</strong> Serverless Architecture, APIs, Data Pipelines, ML Systems</div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Oregon State University</strong> – Honors B.S. in Computer Science, GPA 3.87/4.00 (Dec 2023)</p>
+    <p>Research focus: Autonomous driving and marine data intelligence.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mmdamle03@gmail.com">mmdamle03@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/malhardamle" target="_blank">linkedin.com/in/malhardamle</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Malhar Damle. Built with HTML + CSS.</p>
+  </footer>
 </body>
 </html>
