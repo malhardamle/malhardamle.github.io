@@ -17,16 +17,32 @@
     header {
       background: linear-gradient(135deg, #14b8a6, #0ea5e9);
       color: #fff;
-      text-align: center;
-      padding: 4rem 1rem;
+      padding: 3rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .header-text {
+      flex: 1;
+      min-width: 250px;
     }
     header h1 {
       font-size: 2.8rem;
       margin-bottom: 0.5rem;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 400;
+      margin-bottom: 0.8rem;
+    }
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
     nav {
       background-color: #161b22;
@@ -92,6 +108,8 @@
     }
     .hero-links a:hover { background: rgba(255,255,255,0.3); }
     @media (max-width: 768px) {
+      header { flex-direction: column; text-align: center; }
+      .profile-pic { margin-top: 1.5rem; }
       header h1 { font-size: 2.2rem; }
       nav a { display: inline-block; margin: 0.5rem; }
     }
@@ -99,13 +117,16 @@
 </head>
 <body>
   <header>
-    <h1>Malhar Damle</h1>
-    <p>Software Engineer | Machine Learning | Cloud Architecture</p>
-    <div class="hero-links">
-      <a href="mailto:mmdamle03@gmail.com">Email</a>
-      <a href="https://linkedin.com/in/malhardamle" target="_blank">LinkedIn</a>
-      <a href="malhardamle_swe_resume.pdf" target="_blank">Resume</a>
+    <div class="header-text">
+      <h1>Malhar Damle</h1>
+      <p>Software Engineer | Machine Learning | Cloud Architecture</p>
+      <div class="hero-links">
+        <a href="mailto:mmdamle03@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/malhardamle" target="_blank">LinkedIn</a>
+        <a href="malhardamle_swe_resume.pdf" target="_blank">Resume</a>
+      </div>
     </div>
+    <img src="profile_pic.png" alt="Profile Picture" class="profile-pic">
   </header>
 
   <nav>
@@ -142,11 +163,11 @@
     <ul>
       <li>
         <div class="role">Behavioral Cloning for Autonomous Driving</div>
-        <p>Developed CNN models for safe highway navigation, mimicking human driving and emergency response. Honors ML research at OSU. <a href="https://www.linkedin.com/in/malhardamle/details/projects/" target="_blank" style="color:#14b8a6;">View Publication</a></p>
+        <p>Developed CNN models for safe highway navigation, mimicking human driving and emergency response. Honors ML research at OSU. <a href="https://ir.library.oregonstate.edu/concern/honors_college_theses/bv73c797n" target="_blank" style="color:#14b8a6;">View Publication</a></p>
       </li>
       <li>
         <div class="role">Marine AI – Plankton Classification</div>
-        <p>Automated data segmentation and classification for marine organism imagery with interactive visualization. <a href="https://www.linkedin.com/in/malhardamle/details/projects/" target="_blank" style="color:#14b8a6;">View Publication</a></p>
+        <p>Automated data segmentation and classification for marine organism imagery with interactive visualization. <a href="https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2023.1187771/full" target="_blank" style="color:#14b8a6;">View Publication</a></p>
       </li>
     </ul>
   </section>
@@ -175,7 +196,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Malhar Damle. Built with HTML + CSS.</p>
+    <p>© 2025 Malhar Damle.</p>
   </footer>
 </body>
 </html>
