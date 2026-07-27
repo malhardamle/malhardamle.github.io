@@ -18,14 +18,18 @@
       background: linear-gradient(135deg, #14b8a6, #0ea5e9);
       color: #fff;
       padding: 3rem 2rem;
+      position: relative;
       display: flex;
-      align-items: flex-start; /* top-align */
-      justify-content: space-between; /* text left/center, image right */
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
     }
     .header-text {
-      flex: 1 1 300px; /* allow shrinking on mobile */
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     header h1 {
       font-size: 2.8rem;
@@ -61,6 +65,9 @@
       border: 4px solid #fff;
       object-fit: cover;
       box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
       margin-top: 0;
     }
 
@@ -133,11 +140,10 @@
 
     @media (max-width: 768px) {
       header {
-        flex-direction: column; /* stack text and image */
-        align-items: center;
-        text-align: center;
+        padding-top: 2.5rem;
       }
       .profile-pic {
+        position: static;
         margin-top: 1.5rem;
       }
       nav a { display: inline-block; margin: 0.5rem; }
@@ -214,6 +220,10 @@
       <li>
         <div class="role">Marine AI – Plankton Classification</div>
         <p>Automated data segmentation and classification for marine organism imagery with interactive visualization. <a href="https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2023.1187771/full" target="_blank" style="color:#14b8a6;">View Publication</a></p>
+      </li>
+      <li>
+        <div class="role">Microservice Observability Pipeline on Raspberry Pi</div>
+        <p>Built a lightweight observability pipeline for a Go microservice on Raspberry Pi, exposing parameterized CPU, memory, and disk stress endpoints, collecting app-level and Linux host metrics, and routing them through Pushgateway, Prometheus, and Grafana. Validated end to end on a headless Pi to show how synthetic workloads changed request timing, CPU usage, memory footprint, and disk I/O patterns, including how Linux page cache can hide physical disk reads under heavy application I/O. <a href="https://github.com/malhardamle/microservice-observability-tool" target="_blank" style="color:#14b8a6;">View Project</a></p>
       </li>
     </ul>
   </section>
